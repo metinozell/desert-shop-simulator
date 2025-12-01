@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13bd572bfe20f2a418aa1845dd4d3c61, type: 3}
+  m_Name: REC_Cheesecake
+  m_EditorClassIdentifier: Assembly-CSharp::RecipeData
+  dessertName: Classic Cheesecake
+  description: A rich and creamy New York style cheesecake.
+  dessertImage: {fileID: 0}
+  baseReward: 37
+  difficulty: 2
+  basePreparationTime: 240
+  requiredIngredients:
+  - ingredient: {fileID: 11400000, guid: 30a967d1ac806524faa47d2e9c2d83c1, type: 2}
+    quantity: 2
+  - ingredient: {fileID: 11400000, guid: a3bb81fad83967e4ba119e04a7e1c8fe, type: 2}
+    quantity: 2
+  - ingredient: {fileID: 11400000, guid: 8525620a5f72c2f48b091be033165a14, type: 2}
+    quantity: 1
+  bakeSteps:
+  - stepName: Select Ingredients
+    stepDuration: 0
+  - stepName: Mix Ingredients
+    stepDuration: 0
+  - stepName: Bake
+    stepDuration: 40
+  - stepName: Decorate
+    stepDuration: 0
+  - stepName: Package
+    stepDuration: 0
