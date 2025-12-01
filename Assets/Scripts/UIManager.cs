@@ -39,14 +39,14 @@ public class UIManager : MonoBehaviour
     [Header("Time Control")]
     [SerializeField, Range(0.1f, 60f)] private float timeSpeed = 5; 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+  
     void Start()
     {
         UpdateMoneyUI(money);
         UpdateTimeUI(600f);
     }
 
-    // Update is called once per frame
+  
 
     public bool SpendMoney(float amount)
     {
@@ -104,18 +104,7 @@ public class UIManager : MonoBehaviour
         totalOrders = 0;
     }
     
-    /*void UpdateUI()
-    {
-        dayText.text = "Day " + currentDay.ToString();
-        int hours = Mathf.FloorToInt(currentTime / 60f);
-        int minutes = Mathf.FloorToInt(currentTime % 60f);
-        string period = hours >= 12 ? "PM" : "AM";
-        hours = hours % 12;
-        if (hours == 0) hours = 12;
-        timeText.text = $"{hours:00}:{minutes:00}{period}";
-        moneyText.text = $"${money:F2}";
-    }*/
-
+      
     public void AddMoney(float amount)
     {
         money += amount;

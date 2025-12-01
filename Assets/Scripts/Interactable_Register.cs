@@ -66,8 +66,8 @@ public class Interactable_Register : MonoBehaviour, IInteractable
     {
         Debug.Log("--- SERVE DESSERT BAŞLADI ---");
         RecipeData recipe = BakeScreenManager.instance.GetCurrentRecipe();
-        if (recipe == null) { /* ... (hata logu) */ }
-        else if (uiManager == null) { /* ... (hata logu) */ }
+        if (recipe == null) {    }
+        else if (uiManager == null) {    }
         else
         {
             uiManager.AddMoney(recipe.baseReward);

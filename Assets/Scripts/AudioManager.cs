@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    // --- Singleton (Tekil Nesne) Deseni ---
+  
     public static AudioManager instance;
 
     void Awake()
@@ -17,30 +17,21 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    // --- Singleton Sonu ---
+  
 
     [Header("Audio Sources (Ses Kaynakları)")]
-    public AudioSource musicSource; // Arka plan müziği için
-    public AudioSource sfxSource;   // Ses efektleri için
-
+    public AudioSource musicSource;       public AudioSource sfxSource;     
     [Header("Audio Clips (Ses Dosyaları)")]
     [Header("Music")]
-    public AudioClip mainMusic; // "main sound" dosyanız
-
+    public AudioClip mainMusic;   
     [Header("UI SFX")]
-    public AudioClip uiButtonClick; // "button click" dosyanız
-    public AudioClip levelUpSound;  // "levelup" dosyanız
-
+    public AudioClip uiButtonClick;       public AudioClip levelUpSound;    
     [Header("Game SFX")]
-    public AudioClip chaChingSound;     // "cha-ching" dosyanız
-    public AudioClip orderDeniedSound;  // "order denied" dosyanız
-    public AudioClip doorBellSound;     // "door bell" dosyanız
-    public AudioClip ovenDingSound;     // "oven ding" dosyanız
-
-    /// <summary>
-    /// Starts playing the main background music on loop.
-    /// (Ana arka plan müziğini döngüsel olarak başlatır)
-    /// </summary>
+    public AudioClip chaChingSound;           public AudioClip orderDeniedSound;        public AudioClip doorBellSound;           public AudioClip ovenDingSound;       
+  
+  
+  
+  
     public void StartMusic()
     {
         if (musicSource == null || mainMusic == null)
@@ -50,14 +41,13 @@ public class AudioManager : MonoBehaviour
         }
         
         if (musicSource.isPlaying)
-            return; // Zaten çalıyorsa tekrar başlatma
-
+            return;   
         musicSource.clip = mainMusic;
         musicSource.Play();
     }
 
-    // --- Özel SFX Çalma Fonksiyonları ---
-    // (Diğer script'ler hangi dosyayı çalacağını bilmek zorunda kalmasın diye)
+  
+  
 
     public void PlayButtonClick()
     {

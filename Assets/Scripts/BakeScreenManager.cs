@@ -48,7 +48,7 @@ public class BakeScreenManager : MonoBehaviour
         }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+  
     void Start()
     {
         bakeScreenPanel.SetActive(false);
@@ -56,7 +56,7 @@ public class BakeScreenManager : MonoBehaviour
             uiManager = FindObjectOfType<UIManager>();
     }
 
-    // Update is called once per frame
+  
     void Update()
     {
         if (bakeScreenPanel.activeSelf && currentRecipe != null)
@@ -222,14 +222,7 @@ public class BakeScreenManager : MonoBehaviour
         if (currentRecipe == null) return;
 
         Debug.Log($"{currentRecipe.dessertName} completed successfully!");
-        /*
-        if (uiManager != null)
-        {
-            uiManager.AddMoney(currentRecipe.baseReward);
-            uiManager.OrderCompleted(currentRecipe.baseReward);
-            Debug.Log($"Earned: ${currentRecipe.baseReward}");
-        }*/
-        HasPreparedDessert = true;
+                  HasPreparedDessert = true;
         if (recipeStepsText != null)
         {
             recipeStepsText.text = "<b>Dessert is ready!</b>\nGo to the register to serve the customer.";
@@ -238,7 +231,7 @@ public class BakeScreenManager : MonoBehaviour
         bakeScreenPanel.SetActive(false);
         currentStepIndex = 0;
         stepTimer = 0;
-        //totalOrderTimer = 0;
+  
     }
     void OnTimerEnd()
     {
@@ -251,11 +244,7 @@ public class BakeScreenManager : MonoBehaviour
         GameManager.instance.RemoveReputation(10);
         AudioManager.instance.PlayOrderDenied();
         bakeScreenPanel.SetActive(false);
-        /*if(instructionText != null)
-        {
-            instructionText.text = "";
-        }*/
-    }
+              }
 
     private bool CheckIngredients(RecipeData recipe)
     {
@@ -267,10 +256,10 @@ public class BakeScreenManager : MonoBehaviour
 
             if (quantityOwned < quantityNeeded)
             {
-                // Oyuncuda yeterli malzeme yok
+  
                 int amountMissing = quantityNeeded - quantityOwned;
                 
-                // Listeye kırmızı renkte, biçimlendirilmiş bir metin ekle
+  
                 currentMissingIngredients.Add($"<color=red>Missing: {req.ingredient.itemName} (x{amountMissing})</color>");
             }
         }

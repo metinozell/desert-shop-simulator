@@ -13,7 +13,7 @@ public class BakeStep
 {
     public string stepName;
     public float stepDuration;
-    // public MiniGameType miniGame; // (İleride daha karmaşık hale getirilebilir)
+  
 }
 
 [CreateAssetMenu(fileName = "NewRecipeData", menuName = "Dessert Shop/Recipe Data")]

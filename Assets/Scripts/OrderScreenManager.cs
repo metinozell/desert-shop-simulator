@@ -38,14 +38,14 @@ public class OrderScreenManager : MonoBehaviour
     [Tooltip("How fast patience decreases. Scales with game time.")]
     [SerializeField] private float patienceLossRate = 0.5f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+  
     void Start()
     {
         orderScreenPanel.SetActive(false);
         if (BakeScreenManager.instance == null) Debug.LogError("OrderScreenManager: BakeScreenManager bulunamadı!");
     }
 
-    // Update is called once per frame
+  
     void Update()
     {
         if (orderScreenPanel.activeSelf)
@@ -97,7 +97,7 @@ public class OrderScreenManager : MonoBehaviour
         
         currentOrderRecipe = possibleRecipes[Random.Range(0, possibleRecipes.Count)];
         dessertNameText.text = currentOrderRecipe.dessertName;
-        //dessertImage.sprite = currentOrderRecipe.dessertImage; RESIM ATA
+  
         rewardText.text = $"Reward: ${currentOrderRecipe.baseReward}";
         ShowDifficultyStars(currentOrderRecipe.difficulty);
     

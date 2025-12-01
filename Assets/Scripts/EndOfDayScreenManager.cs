@@ -22,7 +22,7 @@ public class EndOfDayScreenManager : MonoBehaviour
     private int ordersCompleted = 0;
     private int totalOrders = 0;
     private float totalSatisfaction = 0f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+  
     void Start()
     {
         endOfDayPanel.SetActive(false);
@@ -57,8 +57,8 @@ public class EndOfDayScreenManager : MonoBehaviour
             Debug.LogError("UIManager reference is missing in EndOfDayScreenManager!");
         }
 
-        //ordersCompleted = Random.Range(6, 12);
-        //totalOrders = ordersCompleted + Random.Range(0, 3);
+  
+  
     }
 
     void UpdateUI()
@@ -106,7 +106,7 @@ public class EndOfDayScreenManager : MonoBehaviour
         totalOrders++;
         totalSatisfaction = ((totalSatisfaction * (ordersCompleted - 1)) + satisfaction) / ordersCompleted;
     }
-    // Update is called once per frame
+  
     void Update()
     {
         

@@ -89,15 +89,7 @@ public class GameManager : MonoBehaviour
                 ChangeState(GameState.Playing);
             }
         }
-        /*
-        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
-        {
-            if (currentState == GameState.Playing)
-                ChangeState(GameState.Paused);
-            else if (currentState == GameState.Paused)
-                ChangeState(GameState.Playing);
-        }*/
-    }
+              }
 
     void UpdateTime()
     {
@@ -131,7 +123,7 @@ public class GameManager : MonoBehaviour
             case GameState.Paused:
                 Time.timeScale = 0;
                 isTimePaused = true;
-                // uiManager.ShowPauseMenu(true);
+  
                 break;
             case GameState.EndOfDay:
                 isTimePaused = true;
@@ -205,9 +197,9 @@ public class GameManager : MonoBehaviour
         currentXP += amount;
         Debug.Log($"Gained {amount} XP. Current XP: {currentXP} / {xpToNextLevel}");
         
-        // TODO: UI'da XP barını güncelle (Adım 15.X)
-        // if (uiManager != null) 
-        //     uiManager.UpdateXPUI(currentXP, xpToNextLevel);
+  
+  
+  
 
         if (currentXP >= xpToNextLevel)
         {

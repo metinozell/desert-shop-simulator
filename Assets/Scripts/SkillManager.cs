@@ -15,7 +15,7 @@ public class SkillManager : MonoBehaviour
     [Header("Beceri Durumları")]
     public bool isFasterMovementUnlocked { get; private set; } = false;
     public bool isPatientCustomersUnlocked { get; private set; } = false;
-    // (Gelecekte eklenecekler: isHigherTipsUnlocked, isFasterMixingUnlocked vb.)
+  
 
     public void UnlockSkill(string skillID)
     {

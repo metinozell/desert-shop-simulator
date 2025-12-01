@@ -13,8 +13,7 @@
       "dependencies": {
         "com.unity.modules.ai": "1.0.0"
       },
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.burst": {
       "version": "1.8.24",
       "depth": 2,
@@ -23,15 +22,13 @@
         "com.unity.mathematics": "1.2.1",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.collab-proxy": {
       "version": "2.10.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.collections": {
       "version": "2.5.7",
       "depth": 2,
@@ -43,8 +40,7 @@
         "com.unity.nuget.mono-cecil": "1.11.5",
         "com.unity.test-framework.performance": "3.0.3"
       },
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.ext.nunit": {
       "version": "2.0.5",
       "depth": 1,
@@ -58,8 +54,7 @@
       "dependencies": {
         "com.unity.ext.nunit": "1.0.6"
       },
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.ide.visualstudio": {
       "version": "2.0.23",
       "depth": 0,
@@ -67,8 +62,7 @@
       "dependencies": {
         "com.unity.test-framework": "1.1.9"
       },
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.inputsystem": {
       "version": "1.14.2",
       "depth": 0,
@@ -76,15 +70,13 @@
       "dependencies": {
         "com.unity.modules.uielements": "1.0.0"
       },
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.mathematics": {
       "version": "1.3.2",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.multiplayer.center": {
       "version": "1.0.0",
       "depth": 0,
@@ -98,8 +90,7 @@
       "depth": 3,
       "source": "registry",
       "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.render-pipelines.core": {
       "version": "17.2.0",
       "depth": 1,
@@ -148,8 +139,7 @@
       "depth": 2,
       "source": "registry",
       "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.shadergraph": {
       "version": "17.2.0",
       "depth": 1,
@@ -177,8 +167,7 @@
         "com.unity.test-framework": "1.1.33",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.timeline": {
       "version": "1.8.9",
       "depth": 0,
@@ -189,8 +178,7 @@
         "com.unity.modules.animation": "1.0.0",
         "com.unity.modules.particlesystem": "1.0.0"
       },
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.ugui": {
       "version": "2.0.0",
       "depth": 0,
@@ -208,8 +196,7 @@
         "com.unity.ugui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
-      "url": "https://packages.unity.com"
-    },
+      "url": "https:      },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
       "depth": 0,
